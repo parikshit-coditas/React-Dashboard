@@ -1,0 +1,56 @@
+/* InfoCard.css */
+.info-card {
+  width: 200px;
+  height: 145px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-x: auto;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: white;
+  padding: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  margin-right: 40px; /* Add right margin */
+}
+
+.circular-view {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.circular-view span {
+  color: white;
+  font-size: 18px;
+}
+
+.labels {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.label1 {
+  color: gray;
+  font-size: 12px;
+}
+
+.label2 {
+  color: black;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.label3 {
+  color: var(--label3-color, green);
+  font-size: 18px;
+}

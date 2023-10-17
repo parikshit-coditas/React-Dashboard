@@ -1,0 +1,25 @@
+/* Dashboard.css */
+.dashboard-container {
+    margin: 20px;
+  }
+  
+  .dashboard-label {
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+  }
+  
+  .info-cards-container {
+    display: flex;
+    overflow-x: auto;
+    margin: 10px 0;
+    margin-top: 40px;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #fbf6f6; /* Set the desired background color for the entire page */
+  }
+  
+  

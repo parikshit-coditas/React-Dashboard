@@ -1,38 +1,45 @@
-.App {
-  text-align: center;
+/* App.css */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app-container {
+  display: flex;
+  height: 100vh; /* Use 100vh for full viewport height */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.dashboard {
+  width: 200px;
+  background: #1B0563; /* Set background color to #1B0563 */
+  color: white; /* Set font color to white */
+  padding: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100%; /* Set dashboard height to 100% */
 }
 
-.App-link {
-  color: #61dafb;
+.dashboard div {
+  cursor: pointer;
+  margin-bottom: 10px;
+  padding: 10px; /* Add padding to the options */
+  border-radius: 8px; /* Add rounded corners */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.dashboard div.active {
+  font-weight: bold;
+  background-color: rgba(204, 200, 220, 0.4); /* Set a different background color with 40% opacity */
+}
+
+.dashboard-label {
+  font-weight: bold;
+  font-size: 1.5em; /* Adjust the font size as needed */
+  margin-bottom: 15px; /* Increase the margin for spacing */
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+  height: 100%; /* Set content height to 100% */
 }
